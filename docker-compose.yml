@@ -9,7 +9,7 @@ services:
         container_name: go-api
         volumes: 
             - ./go-backend:/usr/src/app/go-backend
-            - /usr/src/app/go-backend/node_modules
+            - /usr/src/go-backend/app/node_modules
     vue-ui:
         build:
             context: ./vue-frontend
@@ -18,5 +18,5 @@ services:
             - "8080:8080"
         container_name: vue-ui
         volumes: 
-            - ./my-app:/usr/src/app/vue-frontend
+            - ./go-backend:/usr/src/app/vue-frontend
             - /usr/src/app/vue-frontend/node_modules

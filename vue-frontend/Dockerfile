@@ -1,15 +1,19 @@
 FROM node:lts-alpine
 
-WORKDIR /usr/src/app/vue-frontend
+RUN mkdir /app
+
+WORKDIR /app
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY ./dist .
+COPY . .
 
 EXPOSE 8080
 
-RUN npm run build
+CMD [ "npm", "start" ]
+
+
 
 

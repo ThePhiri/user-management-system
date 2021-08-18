@@ -1,5 +1,9 @@
 FROM golang:1.16-alpine
 
+RUN mkdir /app
+
+ADD . /app
+
 WORKDIR /app
 
 COPY go.mod ./
@@ -8,8 +12,9 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /docker-gs-ping
+
+RUN go build -o main .
 
 EXPOSE 8080
 
-CMD [ "/docker-gs-ping" ]
+CMD ["/app/main"]
