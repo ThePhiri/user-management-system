@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	routes "github.com/thephiri/user-auth-system/routes"
+	routes "github.com/thephiri/user-management-system/go-backend/routes"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"

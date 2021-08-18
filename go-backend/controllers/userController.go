@@ -12,10 +12,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 
-	"github.com/thephiri/user-auth-system/database"
+	"github.com/thephiri/user-management-system/go-backend/database"
 
-	helper "github.com/thephiri/user-auth-system/helpers"
-	"github.com/thephiri/user-auth-system/models"
+	helper "github.com/thephiri/user-management-system/go-backend/helpers"
+	"github.com/thephiri/user-management-system/go-backend/models"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

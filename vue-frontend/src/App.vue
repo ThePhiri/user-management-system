@@ -19,9 +19,6 @@
             <li class="nav-item">
               <router-link class="nav-link active" to="/">Home</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/about">About</router-link>
-            </li>
           </ul>
           <form class="d-flex">
             <router-link class="nav-link" to="/login">Log in</router-link>

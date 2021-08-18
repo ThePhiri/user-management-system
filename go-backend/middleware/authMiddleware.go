@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	helper "github.com/thephiri/user-auth-system/helpers"
+	helper "github.com/thephiri/user-management-system/go-backend/helpers"
 
 	"github.com/gin-gonic/gin"
 )

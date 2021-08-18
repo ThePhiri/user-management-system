@@ -1,7 +1,7 @@
 package routes
 
 import (
-	controller "github.com/thephiri/user-auth-system/controllers"
+	controller "github.com/thephiri/user-management-system/go-backend/controllers"
 
 	"github.com/gin-gonic/gin"
 )
